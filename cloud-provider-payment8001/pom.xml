@@ -12,6 +12,15 @@
 	<name>cloud-provider-payment8001</name>
 
 	<dependencies>
+	<dependency>
+		<groupId>com.yjb</groupId>
+		<artifactId>cloud-api-commons</artifactId>
+		<version>${project.version}</version>
+	</dependency>
+	<dependency>
+	<groupId>org.springframework.cloud</groupId>
+	<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+	</dependency>
 	<!--包含了sleuth+zipkin-->
 	<dependency>
 		<groupId>org.springframework.cloud</groupId>
@@ -73,6 +82,12 @@
 		<artifactId>spring-boot-starter-test</artifactId>
 		<scope>test</scope>
 	</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>
 </dependencies>
 
 
